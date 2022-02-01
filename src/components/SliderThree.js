@@ -36,6 +36,14 @@ const SliderThree = () => {
                 src={pic.image}
                 alt="image"
               />
+              <div className="overlay" onClick={openModal}>
+                <div className="text" >
+                  <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
+                  <p className="desc-overlay">consectetur adipiscing elit maecenas 
+varius tortor nibh sit amet tempor 
+nibh finibus et… </p>
+                </div>
+              </div>
             </div>
           </Carousel.Item>
         ))}

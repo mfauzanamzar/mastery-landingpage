@@ -102,6 +102,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .button-buy{
@@ -119,7 +120,7 @@
 }
 
 .comment{
-    margin: 20px 0;
+    margin: 10px 0;
     display: flex;
     gap: 10px;
 }
