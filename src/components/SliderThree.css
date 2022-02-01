@@ -11,6 +11,7 @@
     padding: 0 100px;
     margin-bottom: 50px;
     width: 600px;
+    font-size: 24px;
 }
 
 .sliderthree .swiper-button-next {
@@ -49,7 +50,9 @@
 }
 
 .sliderthree .image-slider{
-  width: 100%;
+  width: 529px;
   cursor: pointer;
-  
 }
+.kNBmiK{
+  margin: 0 !important;
+  }

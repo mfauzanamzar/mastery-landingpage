@@ -1,5 +1,5 @@
 import React from "react";
-import './SliderTwo.css'
+import "./SliderTwo.css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -29,10 +29,41 @@ const SliderTwo = () => {
             <p>Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide><img src="/images/picture.png" alt="picture" /></SwiperSlide>
-        <SwiperSlide><img src="/images/picture2.png" alt="picture" /></SwiperSlide>
-        <SwiperSlide><img src="/images/picture.png" alt="picture" /></SwiperSlide>
-        <SwiperSlide><img src="/images/picture2.png" alt="picture" /></SwiperSlide>
+        <SwiperSlide>
+          <div className="textoverlay">
+            <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
+            <p className="desc-overlay">
+              consectetur adipiscing elit maecenas varius tortor nibh sit amet
+              tempor nibh finibus et…
+            </p>
+          </div>
+
+          <img
+            className="image-slider2"
+            src="/images/picture.png"
+            alt="picture"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="textoverlay">
+            <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
+            <p className="desc-overlay">
+              consectetur adipiscing elit maecenas varius tortor nibh sit amet
+              tempor nibh finibus et…
+            </p>
+          </div>
+          <img
+            className="image-slider2"
+            src="/images/picture2.png"
+            alt="picture"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/images/picture.png" alt="picture" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/images/picture2.png" alt="picture" />
+        </SwiperSlide>
         <SwiperSlide></SwiperSlide>
       </Swiper>
     </div>

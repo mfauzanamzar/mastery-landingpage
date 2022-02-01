@@ -62,3 +62,32 @@
   display: none;
 }
 
+.image-slider2{
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+  top: 0px;
+}
+.textoverlay{
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.heading-overlay{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.desc-overlay{
+  font-size: 16px;
+}

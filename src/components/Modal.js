@@ -48,7 +48,7 @@ export const Modal = ({ showModal, setShowModal }) => {
                 </div>
                 <div className="comment-contents">
                 <p className="comment-name">
-                  Johnes Oscar{" "}
+                  Johnes Oscar
                   <span>orem ipsum dolor sit amet ipsum consectetur adip</span>
                 </p>
                 <p className="reply">View Reply (2)</p>
@@ -62,7 +62,7 @@ export const Modal = ({ showModal, setShowModal }) => {
                 </div>
                 <div className="comment-contents">
                 <p className="comment-name">
-                  Siska{" "}
+                  Siska
                   <span>orem ipsum dolor sit amet ipsum consectetur adip</span>
                 </p>
                 <p className="reply">View Reply (2)</p>

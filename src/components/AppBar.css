@@ -1,13 +1,22 @@
 .appbar {
-  max-width: 1440px;
-  margin: 24px auto;
-  padding: 0 100px;
+  width: 100%;
+  padding: 10px 100px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: white; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+
+.appbar-container{
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .appbar .logo{
-  width: 200px;
+  width: 160px;
 }
 
 .searchbar {
@@ -40,6 +49,10 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.hamburger:hover {
+  background-color: #d89804;
 }
 
 .line-container {
@@ -110,11 +123,20 @@
   width: 100%;
 }
 
-.navbar-toggle {
-  margin-top: 20px;
-  display: flex;
-  justify-content: end;
+.close-button-sidebar{
+  text-align: right;
   align-items: center;
+  display: flex;
+  margin-top: 20px;
+  justify-content: end;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
 }
 
 span {
