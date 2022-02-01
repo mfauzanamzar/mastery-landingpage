@@ -1,3 +1,5 @@
+
+
 .footer {
   max-width: 1440px;
   padding: 0 100px;
@@ -7,13 +9,17 @@
   background-position:top;
   background-color: #F9F2EC;
   padding-top: 180px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .footer-text {
   margin: 50px 0;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 500;  
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-text, .footer-heading, .footer-addres, .item1 p, .item2 p, .item3 p, .copyright-text{
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-heading {
