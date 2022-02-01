@@ -1,0 +1,160 @@
+.appbar {
+  max-width: 1440px;
+  margin: 24px auto;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.appbar .logo{
+  width: 200px;
+}
+
+.searchbar {
+  display: flex;
+}
+
+.inputbar {
+  height: 40px;
+  width: 700px;
+  background-color: #f7f5f5;
+  border: none;
+  outline: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.button-search {
+  width: 60px;
+  height: 40px;
+  background-color: #f7f5f5;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  background-color: #f5ac00;
+  border: none;
+  border-radius: 5px;
+}
+
+.line-container {
+  max-width: 1440px;
+  padding: 0 100px;
+  margin: 40px 0;
+}
+
+.line {
+  background-color: #707070;
+  width: 100%;
+  height: 2px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  width: 350px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 850ms;
+  z-index: 10;
+  padding: 0 40px;
+}
+
+.nav-menu.active {
+  right: 0;
+  transition: 350ms;
+  box-shadow: -1px 0px 20px rgba(139, 139, 139, 0.8);
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+
+
+.sub-menu:hover {
+  color: #f5ac00;
+  cursor: pointer;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.sub-menu {
+  text-align: left;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+ul > :last-child {
+  margin-top: auto;
+}
+
+.sidebar-bottom {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.setting,
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}

@@ -1,0 +1,38 @@
+.sliderone {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.first-banner{
+    padding-left: 50px;
+}
+
+.banner {
+  height: 400px;
+  width: 1000px;
+  object-fit: cover;
+}
+
+.sliderone .swiper{
+    height: 450px;
+}
+
+.swiper-slide {
+  height: 390px;
+  width: 1000px;
+}
+
+.sliderone .swiper-slide-active {
+  width: 680px !important;
+  margin-right: 389px !important;
+}
+
+.sliderone .swiper-slide-prev {
+  width: 680px !important;
+  margin-right: 389px !important;
+  margin-left: -35px !important;
+}
+
+.sliderone .swiper-pagination-bullet-active {
+    background: #f5ac00 !important;
+}
