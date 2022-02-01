@@ -25,20 +25,18 @@ const SliderThree = () => {
           Popular Coaching Program dolor sit amet consectetur.
         </p>
       </div>
-      <Carousel
-        showDots
-        cols={3}
-        rows={4}
-        gap={0}
-      >
+      <Carousel showDots cols={3} rows={4} gap={0}>
         {Image.map((pic) => (
           <Carousel.Item>
-            <img
-              className="image-slider"
-              onClick={openModal}
-              src={pic.image}
-              alt="image"
-            />
+            <div className="image">
+              <img
+                width="100%"
+                className="image-slider"
+                onClick={openModal}
+                src={pic.image}
+                alt="image"
+              />
+            </div>
           </Carousel.Item>
         ))}
       </Carousel>

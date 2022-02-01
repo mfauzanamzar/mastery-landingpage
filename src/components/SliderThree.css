@@ -49,10 +49,16 @@
   height: 600px;
 }
 
-.sliderthree .image-slider{
-  width: 529px;
+.sliderthree .image .image-slider{
+  height: 100%;
+  object-fit: cover;
   cursor: pointer;
 }
 .kNBmiK{
   margin: 0 !important;
+  }
+
+  .image{
+    width: 100%;
+    height: 100%;
   }
