@@ -207,6 +207,11 @@
   .close-button-mobile{
   display: none;
 }
+.sliderthree .heading-slider {
+    padding: 0 100px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
 }
 
 @media (max-width: 950px) {
@@ -241,6 +246,11 @@
     gap: 20px;
     justify-content: center;
   }
+  .sliderthree .heading-slider {
+    padding: 0 40px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
 }
 
 @media (min-width: 700px) {
@@ -573,6 +583,11 @@
 .slidertwo {
     padding: 0 20px;
   }
+  .sliderthree .heading-slider {
+    padding: 0 20px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
 }
 
 @media (max-width: 440px) {
