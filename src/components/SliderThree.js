@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import "./SliderThree.css";
 import Image from "../data/picture";
-
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 import { Modal } from "./Modal";
 import Carousel from "react-grid-carousel";
 
@@ -25,7 +18,18 @@ const SliderThree = () => {
           Popular Coaching Program dolor sit amet consectetur.
         </p>
       </div>
-      <Carousel showDots cols={3} rows={4} gap={0}>
+      <Carousel showDots cols={3} rows={4} gap={0}
+       responsiveLayout={[
+          {
+            breakpoint: 800,
+            cols: 2
+          },
+          {
+            breakpoint: 500,
+            cols: 1
+          }
+        ]}
+        mobileBreakpoint={0}>
         {Image.map((pic) => (
           <Carousel.Item>
             <div className="image">

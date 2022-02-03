@@ -1,15 +1,25 @@
 .slidertwo {
   max-width: 1440px;
-  padding-left: 100px;
   margin: 50px auto;
+  display: flex;
+  gap: 40px;
 }
 
 .text-slider {
-  width: 400px;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex: 0.4;
+}
+
+.bVoXXg{
+  min-width: 160px;
+}
+
+.bqyzQp {
+
+  flex: 0.6;
 }
 
 .heading-slider {
@@ -32,6 +42,7 @@
 
 .slidertwo .swiper {
   height: 560px;
+  flex: 0.7;
 }
 
 .slidertwo .swiper-button-next {
@@ -63,7 +74,7 @@
 }
 
 .image-slider2{
-  max-width: 400px;
+  width: 100%;
   position: relative;
   z-index: 1;
   top: 0px;

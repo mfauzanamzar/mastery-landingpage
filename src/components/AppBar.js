@@ -6,13 +6,17 @@ import { AiOutlineSetting } from "react-icons/ai";
 import { MdLogout } from "react-icons/md";
 const AppBar = () => {
   const [sidebar, setSidebar] = useState(false);
+  const [mobileinput, setMobileinput] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+  const showInput = () => setMobileinput(!mobileinput);
   return (
     <div>
       <div className="appbar">
         <div className="appbar-container">
-          <img className="logo" src="/logo-mastery.png" alt="logo" />
+          <div className="appbar-logo">
+            <img className="logo" src="/logo-mastery.png" alt="logo" />
+          </div>
           <div className="searchbar">
             <button className="button-search">
               <FiSearch size={18} />
@@ -23,9 +27,17 @@ const AppBar = () => {
               type="text"
             />
           </div>
-          <button onClick={showSidebar} className="hamburger">
-            <FiMenu size={24}  />
-          </button>
+          <div className="searchbar-secondary">
+            <button onClick={showInput} className="button-search button-search-secondary ">
+              <FiSearch size={18} />
+            </button>
+          </div>
+          <div className="appbar-toggle">
+            <button onClick={showSidebar} className="hamburger">
+              <FiMenu className="menu-icon" size={24} />
+            </button>
+          </div>
+
           <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
             <ul className="nav-menu-items" onClick={showSidebar}>
               <div className="close-button-sidebar">
@@ -60,6 +72,12 @@ const AppBar = () => {
             </ul>
           </nav>
         </div>
+        
+        <input
+              placeholder="What do you want to learn?"
+              className={mobileinput ? "inputbar-mobile inputbar-mobile-active" : "inputbar-mobile"}
+              type="text"
+            />
       </div>
       <div className="line-container">
         <div className="line"></div>

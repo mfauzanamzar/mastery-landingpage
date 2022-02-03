@@ -4,13 +4,14 @@
 }
 
 .first-banner{
-    padding-left: 50px;
+    padding-left: 17px;
 }
 
 .banner {
   height: 400px;
   width: 1000px;
   object-fit: cover;
+  box-shadow: 0px 10px 10px #aaaaaa;
 }
 
 .sliderone .swiper{
