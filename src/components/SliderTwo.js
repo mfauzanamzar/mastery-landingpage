@@ -23,7 +23,7 @@ const SliderTwo = () => {
             </p>
             <p>Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.</p>
           </div>
-      <Carousel showDots cols={2} rows={1} gap={10}
+      <Carousel cols={2} rows={1} gap={10}
        responsiveLayout={[
           {
             breakpoint: 500,
@@ -47,6 +47,42 @@ nibh finibus et… </p>
                 </div>
               </div>
               </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="image">
+              <img
+            className="image-slider2"
+            src="/images/picture2.png"
+            alt="picture"
+          />
+            <div className="overlay">
+                <div className="text" >
+                  <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
+                  <p className="desc-overlay">consectetur adipiscing elit maecenas 
+varius tortor nibh sit amet tempor 
+nibh finibus et… </p>
+                </div>
+              </div>
+            </div>
+          
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="image">
+              <img
+            className="image-slider2"
+            src="/images/picture2.png"
+            alt="picture"
+          />
+            <div className="overlay">
+                <div className="text" >
+                  <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
+                  <p className="desc-overlay">consectetur adipiscing elit maecenas 
+varius tortor nibh sit amet tempor 
+nibh finibus et… </p>
+                </div>
+              </div>
+            </div>
+          
           </Carousel.Item>
           <Carousel.Item>
             <div className="image">

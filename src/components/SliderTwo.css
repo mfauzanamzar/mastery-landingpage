@@ -1,6 +1,6 @@
 .slidertwo {
   max-width: 1440px;
-  margin: 50px auto;
+  margin-bottom: 100px;
   display: flex;
   gap: 40px;
 }
@@ -11,6 +11,10 @@
   flex-direction: column;
   gap: 20px;
   flex: 0.4;
+}
+
+.hNAxas {
+  margin: 0 !important;
 }
 
 .bqyzQp {
@@ -102,3 +106,20 @@
   opacity: 1;
   background: none;
 }
+
+
+.bhRnqO {
+  left: 44px !important;
+  top: 104% !important;
+}
+
+.kVtMtA {
+  top: 104% !important;
+  left: 0 !important;
+}
+
+.MMbPG{
+  display: unset !important;
+  margin: 20px 0 !important;
+}
+
