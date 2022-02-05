@@ -22,6 +22,7 @@
   background-repeat: no-repeat !important;
   height: 35px;
   width: 35px;
+  z-index: 4 !important;
   background-size: 100% !important;
 }
 
@@ -34,6 +35,7 @@
   background-repeat: no-repeat !important;
   height: 35px;
   width: 35px;
+  z-index: 4 !important;
   background-size: 100% !important;
 }
 
