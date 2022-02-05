@@ -19,39 +19,6 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <RiCloseCircleLine size={28} />
               </button>
             </div>
-
-            <div className="modal-text">
-              <div className="profile">
-                <div className="profile-pic">
-                  <img src="/images/picture.png" alt="" />
-                </div>
-                <div className="profile-namestar">
-                  <p className="profile-name">Rendy Tomaluweng</p>
-                  <p>⭐️⭐️⭐️⭐️</p>
-                </div>
-              </div>
-              <div className="detail-wrapper">
-                <div className="detail">
-                  <p className="detail-title">Lorem ipsum dolor sit amet </p>
-                  <p className="detail-description">
-                  consectetur adipiscing elit maecenas varius 
-sit amet tempor nibh finibus et… 
-                  </p>
-                </div>
-                <div className="detail-button">
-                  <a href="#">
-                    <FaRegComment size={30} color="black" />
-                  </a>
-                  <a href="#">
-                    <HiOutlineShare size={30} color="black" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="modal-button">
-                <button className="button-buy">Beli Kelas</button>
-              </div>
-            </div>
             <div className="modal-content">
               <div className="profile">
                 <div className="profile-pic">
@@ -100,7 +67,7 @@ sit amet tempor nibh finibus et…
 
                 <p className="comment-day">5 hari yangg lalu</p>
               </div>
-              <div className="comment">
+              <div className="comment comment-two">
                 <div className="comment-profile">
                   <img src="/images/profile-comment.png" alt="" />
                 </div>
