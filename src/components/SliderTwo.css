@@ -17,6 +17,30 @@
   margin: 0 !important;
 }
 
+.slidertwo .bhRnqO {
+  background-image: url('../icons/right.svg') !important;
+  background-repeat: no-repeat !important;
+  height: 35px;
+  width: 35px;
+  background-size: 100% !important;
+}
+
+.slidertwo .bhRnqO::before{
+  content: none !important;
+}
+
+.slidertwo .kVtMtA{
+  background-image: url('../icons/left.svg') !important;
+  background-repeat: no-repeat !important;
+  height: 35px;
+  width: 35px;
+  background-size: 100% !important;
+}
+
+.slidertwo .kVtMtA::before{
+  content: none !important;
+}
+
 .bqyzQp {
 
   flex: 0.6;
