@@ -1,0 +1,618 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #747474;
+}
+#logo img {
+    height: 70px;
+}
+
+#logo {
+    height: 100%;
+    float: none;
+    width: 40%;
+}
+
+#primary-menu {
+    float: none;
+    display: flex;
+    margin-left: auto;
+    width: 100%;
+}
+
+#header-wrap .container {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #707070;
+}
+
+#header, #header-wrap {
+    height: auto;
+}
+
+#top-search, #top-cart, #side-panel-trigger, #top-account {
+    float: none;
+}
+
+#header {
+    border-bottom: none;
+}
+
+#side-panel-trigger a {
+    width: 52px;
+    height: 50px;
+    background-color: #F5AC00;
+    line-height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #000000;
+}
+
+#side-panel-trigger {
+    margin: 22px 0 22px 100px;
+}
+#top-search form input::-webkit-input-placeholder {
+    color: #7B7B7B;
+    text-transform: none;
+}
+#top-search form input {
+    height: 50px;
+    background-color: #F7F5F5;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: normal;
+    border-radius: 99px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 24px 10px 60px;
+    pointer-events: auto;
+}
+
+#top-search .searchbox-inner {
+    position: relative;
+}
+
+#top-search .searchbox-inner i {
+    position: absolute;
+    left: 24px;
+    color: #000000;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#top-search {
+    margin: 22px 0 22px 0;
+    width: 100%;
+}
+.coaching-main-slider {
+    margin-top: 50px;
+    overflow: visible;
+}
+
+#header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+    height: 50px;
+}
+
+#header.sticky-header:not(.static-sticky) #top-search, #header.sticky-header:not(.static-sticky) #top-cart, #header.sticky-header:not(.static-sticky) #side-panel-trigger {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#header.sticky-header #header-wrap .container {border-bottom: none;}
+
+#header.sticky-header #logo {
+    margin: 5px 40px 5px 0px;
+}
+.coaching-main-slider .owl-carousel .owl-item img {
+    border-radius: 10px;
+    position: relative;
+}
+.coaching-main-slider .owl-dots {
+    bottom: -50px;
+}
+
+.coaching-main-slider .owl-dots .owl-dot {
+    width: 14px;
+    height: 14px;
+    border: solid 2px #F5AC00;
+    background-color: #fff !important;
+}
+
+.coaching-main-slider .owl-dots .owl-dot.active {
+    border-color: #000;
+    background-color: #F5AC00 !important;
+}
+#side-panel {
+    background-color: rgb(255 255 255 / 80%);
+    backdrop-filter: blur(30px);
+    width: 400px;
+    right: -400px;
+}
+
+.side-panel-open #side-panel {
+	-webkit-box-shadow: -20px 0px 25px 0px rgba(0,0,0,0.19);
+    -moz-box-shadow: -20px 0px 25px 0px rgba(0,0,0,0.19);
+    box-shadow: -20px 0px 25px 0px rgba(0,0,0,0.19);
+}
+
+.side-panel-open{
+    right: 0 !important;
+}
+
+body.side-panel-open .body-overlay {
+    opacity: 0;
+}
+#side-panel .side-panel-wrap {
+    width: 430px;
+    padding: 30px 60px 50px 50px;
+}
+
+#side-panel .user-profile-wrap .user-image {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#side-panel .user-profile-wrap .user-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+#side-panel .user-profile-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#side-panel .nav-tree li a {
+    font-size: 25px;
+    text-transform: none;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 1px;
+    transition: all .2s;
+}
+
+#side-panel .nav-tree a:hover {
+    color: #F5AC00 !important;
+}
+
+#side-panel .nav-tree li.active a {
+    color: #000 !important;
+}
+
+#side-panel .nav-tree li {
+    position: relative;
+}
+
+#side-panel .nav-tree li.active:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #F5AC00;
+    border-radius: 50%;
+    left: -22px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.sidebar-bottom-actions a {
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+}
+
+#side-panel .nav-tree {
+    margin-bottom: 60px;
+}
+
+.sidebar-bottom-actions a i {
+    font-size: 28px;
+}
+
+.sidebar-bottom-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-bottom-actions a.left-icon i {
+    margin-right: 14px;
+}
+
+.sidebar-bottom-actions a.right-icon i {
+    margin-left: 15px;
+}
+
+.sidebar-bottom-actions a.sign-out i {
+    transform: rotate(90deg);
+}
+.content-wrap {
+    padding: 140px 0 80px;
+}
+.popular-coaching-slider .popular-coaching-text {
+    padding-left: 4rem;
+}
+
+.popular-coaching-slider .popular-coaching-text h2 {
+    line-height: 1.3;
+}
+.popular-coaching-carousel {
+    padding-left: 50px;
+}
+.popular-coaching-wrap {
+    position: relative;
+}
+
+.popular-coaching-wrap .coaching-description {
+    padding: 0 30px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+}
+
+.popular-coaching-wrap .coaching-description h3 {
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.popular-coaching-wrap .coaching-description p {
+    line-height: 1.5 !important;
+}
+.popular-coaching-carousel .owl-carousel .owl-nav [class*=owl-] {
+    top: auto;
+    bottom: -64px;
+    margin-top: 0;
+    border: solid 2px #000;
+    color: #000;
+    width: 42px;
+    height: 42px;
+    line-height: 40px;
+    opacity: 1;
+    left: 0;
+}
+
+.popular-coaching-grid {
+    margin-top: 100px;
+}
+
+.popular-coaching-carousel .owl-carousel .owl-nav .owl-next {
+    left: 64px;
+}
+.popular-coaching-grid h2 {
+    padding: 0 4rem;
+    width: 50%;
+    line-height: 1.3;
+}
+
+.popular-coaching-grid .portfolio-desc {
+    margin-top: auto !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-end;
+    padding: 30px 32px 10px !important;
+}
+
+.popular-coaching-grid .portfolio-desc h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.popular-coaching-grid .portfolio-desc p {
+    color: #fff;
+    line-height: 1.5 !important;
+}
+.popular-coaching-grid .pagination {
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+.page-link {
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #CFCFCF;
+    line-height: normal;
+}
+
+.page-item.active .page-link, .page-link:hover, .page-link:focus {
+    color: #F5AC00 !important;
+    background-color: #fff !important;
+}
+
+.page-item.active .page-link, .page-link:focus {
+    font-size: 30px;
+}
+footer {
+    background-position: top;
+    background-size: cover;
+    padding: 130px 0 40px;
+}
+
+footer p.lead {
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+}
+.footer-about h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.3;
+}
+
+footer a {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-about p {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+footer .social-icon.si-dark {
+    background-color: #000;
+    margin-right: 12px;
+}
+
+.footer-menu.no-tree a, .footer-menu h4 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-menu {
+    margin-top: 24px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-menu ul li a {
+    font-size: 16px;
+    padding: 8px 0;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.footer-copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0;
+    position: relative;
+    margin-top: 30px;
+}
+.modal-coach-detail .modal-body {
+    padding: 0;
+}
+
+.modal-coach-detail button.close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    z-index: 1;
+    color: #000;
+    text-shadow: none;
+    opacity: 1;
+    font-size: 30px;
+}
+
+.modal-backdrop {
+    background-color: rgb(255 255 255 / 50%);
+    backdrop-filter: blur(15px);
+}
+
+.modal-backdrop.show {
+    opacity: 1;
+}
+.single-coach-detail .user-account-wrap .user-image {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.user-name-stars .user-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+.user-star-rating .rating-item {
+    font-size: 20px;
+    color: #D1B176;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.user-star-rating .rating-item.empty {
+    color: #2FFF00;
+}
+
+.single-coach-detail .user-account-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.single-coach-detail .coach-title {
+    color: #000;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+.button {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 99px;
+    padding: 0 30px;
+    margin: 0;
+}
+
+.coach-actions .button {
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(245,172,0,0.49);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(245,172,0,0.49);
+    box-shadow: 0px 10px 30px 0px rgba(245,172,0,0.49);
+    margin-right: 40px;
+}
+
+.coach-actions .share-btn {
+    color: #000;
+    font-size: 22px;
+}
+
+.single-coach-detail .coach-actions {
+    margin-bottom: 50px;
+}
+.coach-comments .comment-item .user-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+p {}
+
+.coach-comments .comment-item .main-comment {
+    font-size: 12px;
+    color: #000;
+}
+
+.coach-comments .comment-item .main-comment p {
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.coach-comments .comment-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.coach-comments .comment-item .comment-details {
+    margin-right: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.comment-details .view-reply {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: italic;
+    color: #000;
+    line-height: normal;
+    position: relative;
+}
+
+.comment-item .comment-time {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #000;
+}
+
+.comment-details .view-reply:after {
+    content: "";
+    display: inline-block;
+    width: 36px;
+    border-top: solid 1px #000;
+    position: absolute;
+    top: 50%;
+    right: -60px;
+}
+
+.single-coach-detail .coach-comments {
+    margin-bottom: 50px;
+}
+.single-coach-detail {
+    padding: 32px 40px;
+}
+
+.single-coach-image {
+    height: 100%;
+}
+
+.single-coach-image img {
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.modal-coach-detail .modal-content {
+}
+
+.comment-message-form form {
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+}
+
+.comment-message-form .form-control {
+    background-color: #F7F5F5;
+    border: none;
+    border-radius: 99px;
+    padding: 10px 24px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    margin-right: 14px;
+}
+
+.button-secondary {
+    background-color: #373636;
+    color: #fff;
+}
+
+.comment-message-form .button-secondary {
+    font-size: 18px !important;
+    font-family: 'Roboto', sans-serif;
+    height: 44px;
+    line-height: 44px;
+}
+
+
+/*==================== DESKTOP ONLY ====================*/
+@media (min-width: 768px) {
+
+	#top-search form {
+	    opacity: 1;
+	    z-index: auto;
+	    width: auto !important;
+	    height: auto !important;
+	    padding: 0;
+	    top: auto;
+	    left: auto;
+	    position: relative;
+	}
+
+	#top-search > a {
+	    display: none;
+	}
+}
+
+
+/*==================== MOBILE ====================*/
+@media (max-width: 767px) {
+
+}

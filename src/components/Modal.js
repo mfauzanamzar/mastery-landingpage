@@ -8,93 +8,87 @@ export const Modal = ({ showModal, setShowModal }) => {
   return (
     <>
       {showModal ? (
-        <div className="background">
-          <div className="modal-wrapper" showModal={showModal}>
-            <img className="modal-img" src="/images/picture.png" alt="" />
-            <div className="button-close">
-              <button
-                className="close-button-mobile"
-                onClick={() => setShowModal((prev) => !prev)}
-              >
-                <RiCloseCircleLine size={28} />
-              </button>
-            </div>
-            <div className="modal-content">
-              <div className="profile">
-                <div className="profile-pic">
-                  <img src="/images/picture.png" alt="" />
-                </div>
-                <div className="profile-namestar">
-                  <p className="profile-name">Rendy Tomaluweng</p>
-                  <p>⭐️⭐️⭐️⭐️</p>
-                </div>
-
-                <button
-                  className="close-button"
-                  onClick={() => setShowModal((prev) => !prev)}
-                >
-                  <RiCloseCircleLine size={28} />
-                </button>
-              </div>
-              <div className="detail">
-                <p className="detail-title">Lorem ipsum dolor sit amet </p>
-                <p className="detail-description">
-                  consectetur adipiscing elit maecenas varius tortor nibh sit
-                  amet tempor nibh finibus et. Aenean eu enim justo vestibulum
-                  aliquam hendrerit molestie. Mauris malesu ada nisi sit amet
-                  augue accumsan tincidunt.{" "}
-                </p>
-              </div>
-              <div className="modal-button">
-                <button className="button-buy">Beli Kelas</button>
-                <a className="button-share" href="/tes">
-                  <HiOutlineShare size={24} color="black" />
-                </a>
-              </div>
-              <div className="comment">
-                <div className="comment-profile">
-                  <img src="/images/profile-comment.png" alt="" />
-                </div>
-                <div className="comment-contents">
-                  <p className="comment-name">
-                    Johnes Oscar
-                    <span>
-                      orem ipsum dolor sit amet ipsum consectetur adip
-                    </span>
-                  </p>
-                  <p className="reply">View Reply (2)</p>
-                </div>
-
-                <p className="comment-day">5 hari yangg lalu</p>
-              </div>
-              <div className="comment comment-two">
-                <div className="comment-profile">
-                  <img src="/images/profile-comment.png" alt="" />
-                </div>
-                <div className="comment-contents">
-                  <p className="comment-name">
-                    Siska
-                    <span>
-                      orem ipsum dolor sit amet ipsum consectetur adip
-                    </span>
-                  </p>
-                  <p className="reply">View Reply (2)</p>
-                </div>
-
-                <p className="comment-day">Kemarin</p>
-              </div>
-              <div className="comment-section">
-                <input
-                  className="input-comment"
-                  type="text"
-                  placeholder="Ada Pertanyaan?"
-                />
-                <button className="button-kirim">Kirim</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      ) : null}
+       <div className="modal fade modal-coach-detail" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+       <div className="modal-dialog">
+         <div className="modal-content">
+           <button type="button" className="close" data-dismiss="modal" aria-hidden="true"><i className="icon-line-circle-cross"></i></button>
+           <div className="modal-body">
+             <div className="row no-gutters">
+               <div className="col-md-6">
+                 <div className="single-coach-image">
+                   <img src="images/single-coach-image.png" className="img-responsive"/>
+                 </div>
+               </div>
+               <div className="col-md-6">
+                 <div className="single-coach-detail">
+                   <div className="user-account-wrap">
+                     <img src="images/user.jpg" className="user-image"/>
+                     <div className="user-name-stars">
+                       <div className="user-name">Rendy Tomaluweng</div>
+                       <div className="user-star-rating">
+                         <span className="rating-item"><i className="icon-star3"></i></span>
+                         <span className="rating-item"><i className="icon-star3"></i></span>
+                         <span className="rating-item"><i className="icon-star3"></i></span>
+                         <span className="rating-item"><i className="icon-star3"></i></span>
+                         <span className="rating-item empty"><i className="icon-star3"></i></span>
+                       </div>
+                     </div>
+                   </div>
+                   <h3 className="coach-title">Lorem ipsum dolor sit amet</h3>
+                   <div className="coach-description">
+                     <p>consectetur adipiscing elit maecenas varius tortor nibh sit amet tempor nibh finibus et. Aenean eu enim justo vestibulum aliquam hendrerit molestie. Mauris malesuada nisi sit amet augue accumsan tincidunt.</p>
+                   </div>
+                   <div className="coach-actions">
+                     <a href="#" className="button">Beli Kelas</a>
+                     <a href="#" className="share-btn"><i className="icon-line-share"></i></a>
+                   </div>
+                   <div className="coach-comments">
+                     <div className="comment-item">
+                       <img src="images/user.jpg" className="user-image"/>
+                       <div className="comment-details">
+                         <div className="main-comment">
+                           <p>Johnes Oscar Lorem ipsum dolor sit amet ipsum consectetur adip</p>
+                         </div>
+                         <a href="#" className="view-reply">View Reply (2)</a>
+                       </div>
+                       <div className="comment-time">5 hari yang lalu</div>
+                     </div>
+                     <div className="comment-item">
+                       <img src="images/user.jpg" className="user-image"/>
+                       <div className="comment-details">
+                         <div className="main-comment">
+                           <p>Johnes Oscar Lorem ipsum dolor sit amet ipsum consectetur adip</p>
+                         </div>
+                         <a href="#" className="view-reply">View Reply (2)</a>
+                       </div>
+                       <div className="comment-time">5 hari yang lalu</div>
+                     </div>
+                     <div className="comment-item">
+                       <img src="images/user.jpg" className="user-image"/>
+                       <div className="comment-details">
+                         <div className="main-comment">
+                           <p>Johnes Oscar Lorem ipsum dolor sit amet ipsum consectetur adip</p>
+                         </div>
+                         <a href="#" className="view-reply">View Reply (2)</a>
+                       </div>
+                       <div className="comment-time">5 hari yang lalu</div>
+                     </div>
+                   </div>
+                   <div className="comment-message-form">
+                     <form className="form-inline">
+                       <input type="text" className="form-control" placeholder="Ada Pertanyaan?" name=""/>
+                       <button type="submit" className="button button-secondary">Kirim</button>
+                     </form>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   
+       ) : null}
     </>
   );
 };

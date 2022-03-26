@@ -1,126 +1,95 @@
 import React from "react";
 import "./SliderTwo.css";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import Carousel from "react-grid-carousel";
+import "../css/responsive-2.css";
+import "../css/font-icons.css";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const SliderTwo = () => {
   return (
     <div className="slidertwo">
-      
-      <div className="text-slider">
-            <p className="heading-slider">
+      <div className="row">
+        <div className="col-md-5">
+          <div class="popular-coaching-text">
+            <h2>
               Popular Coaching Program dolor sit amet consectetur adipiscing
               elit.
-            </p>
+            </h2>
             <p>
               Lorem ipsum dolor sit amet con sectetur adipiscing elit. Maecenas
               varius tortor nibh, sit amet tempor nibh finibus et.
             </p>
             <p>Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.</p>
           </div>
-      <Carousel cols={2} rows={1} gap={10}
-       responsiveLayout={[
-          {
-            breakpoint: 500,
-            cols: 2
-          }
-        ]}
-        mobileBreakpoint={0}>
-          <Carousel.Item>
-          <div className="image">
-          <img
-            className="image-slider2"
-            src="/images/picture.png"
-            alt="picture"
-          />
-          <div className="overlay">
-                <div className="text" >
-                  <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
-                  <p className="desc-overlay">consectetur adipiscing elit maecenas 
-varius tortor nibh sit amet tempor 
-nibh finibus et… </p>
+        </div>
+
+        <div className="col-md-7">
+          <div className="popular-coaching-carousel">
+            <OwlCarousel
+              className="owl-theme"
+              loop
+              items={2}
+              margin={30}
+              nav
+              dots={false}
+              navText={[
+                '<i class="icon-line-arrow-left"></i>',
+                '<i class="icon-line-arrow-right"></i>',
+              ]}
+            >
+              <a href="#">
+                <div class="popular-coaching-wrap">
+                  <img src="images/popular-1.png" class="coaching-image" />
+                  <div class="coaching-description">
+                    <h3>Lorem ipsum dolor sit amet </h3>
+                    <p>
+                      consectetur adipiscing elit maecenas varius tortor nibh
+                      sit amet tempor nibh finibus et…
+                    </p>
+                  </div>
                 </div>
-              </div>
-              </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="image">
-              <img
-            className="image-slider2"
-            src="/images/picture2.png"
-            alt="picture"
-          />
-            <div className="overlay">
-                <div className="text" >
-                  <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
-                  <p className="desc-overlay">consectetur adipiscing elit maecenas 
-varius tortor nibh sit amet tempor 
-nibh finibus et… </p>
+              </a>
+              <a href="#">
+                <div class="popular-coaching-wrap">
+                  <img src="images/popular-2.png" class="coaching-image" />
+                  <div class="coaching-description">
+                    <h3>Lorem ipsum dolor sit amet </h3>
+                    <p>
+                      consectetur adipiscing elit maecenas varius tortor nibh
+                      sit amet tempor nibh finibus et…
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="image">
-              <img
-            className="image-slider2"
-            src="/images/picture2.png"
-            alt="picture"
-          />
-            <div className="overlay">
-                <div className="text" >
-                  <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
-                  <p className="desc-overlay">consectetur adipiscing elit maecenas 
-varius tortor nibh sit amet tempor 
-nibh finibus et… </p>
+              </a>
+              <a href="#">
+                <div class="popular-coaching-wrap">
+                  <img src="images/popular-1.png" class="coaching-image" />
+                  <div class="coaching-description">
+                    <h3>Lorem ipsum dolor sit amet </h3>
+                    <p>
+                      consectetur adipiscing elit maecenas varius tortor nibh
+                      sit amet tempor nibh finibus et…
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="image">
-              <img
-            className="image-slider2"
-            src="/images/picture2.png"
-            alt="picture"
-          />
-            <div className="overlay">
-                <div className="text" >
-                  <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
-                  <p className="desc-overlay">consectetur adipiscing elit maecenas 
-varius tortor nibh sit amet tempor 
-nibh finibus et… </p>
+              </a>
+              <a href="#">
+                <div class="popular-coaching-wrap">
+                  <img src="images/popular-2.png" class="coaching-image" />
+                  <div class="coaching-description">
+                    <h3>Lorem ipsum dolor sit amet </h3>
+                    <p>
+                      consectetur adipiscing elit maecenas varius tortor nibh
+                      sit amet tempor nibh finibus et…
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="image">
-              <img
-            className="image-slider2"
-            src="/images/picture2.png"
-            alt="picture"
-          />
-            <div className="overlay">
-                <div className="text" >
-                  <p className="heading-overlay">Lorem ipsum dolor sit amet </p>
-                  <p className="desc-overlay">consectetur adipiscing elit maecenas 
-varius tortor nibh sit amet tempor 
-nibh finibus et… </p>
-                </div>
-              </div>
-            </div>
-          
-          </Carousel.Item>
-      </Carousel>
+              </a>
+            </OwlCarousel>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

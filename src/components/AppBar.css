@@ -5,8 +5,8 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: white; 
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  
+  background-color: white;
 }
 
 .appbar-container{
@@ -16,17 +16,25 @@
   gap: 20px;
 }
 
-.appbar .logo{
-  width: 160px;
+
+#logoApp{
+  transition: 0.2s;
+}
+
+.shaodw{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 }
 
 .searchbar {
   display: flex;
   max-width: 700px;
-  flex: 0.7;
+  flex: 0.6;
+  align-items: center;
 }
 
 .appbar-logo{
+  align-items: center;
+  display: flex;
   flex: 0.2;
 }
 
@@ -34,25 +42,28 @@
   flex: 0.1;
   display: flex;
   justify-content: end;
+  align-items: center;
 }
 
 .inputbar {
-  height: 40px;
+  height: 50px;
   width: 100%;
+  font-size: 20px;
   background-color: #f7f5f5;
   border: none;
   outline: none;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 99px;
+  border-bottom-right-radius: 99px;
+  padding-right: 16px;
 }
 
 .button-search {
   width: 60px;
-  height: 40px;
+  height: 50px;
   background-color: #f7f5f5;
   border: none;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
 }
 
 .button-search-secondary{
@@ -64,8 +75,8 @@
 }
 
 .hamburger {
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 50px;
   background-color: #f5ac00;
   border: none;
   border-radius: 5px;
@@ -78,8 +89,8 @@
 
 .line-container {
   max-width: 1440px;
-  padding: 0 100px;
-  margin: 40px 0;
+  padding: 10px 100px;
+  margin-top: 20px;
 }
 
 .line {
@@ -182,7 +193,7 @@ span {
   margin-left: 16px;
 }
 
-ul {
+.nav-menu ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
