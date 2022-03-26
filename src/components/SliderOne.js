@@ -11,6 +11,10 @@ const SliderOne = () => {
     items: 1,
     nav: true,
     autoplay: true,
+    navText: [
+      '<i class="icon-line-arrow-left"></i>',
+      '<i class="icon-line-arrow-right"></i>',
+    ],
     responsive: {
       0: {
         stagePadding: 60,
