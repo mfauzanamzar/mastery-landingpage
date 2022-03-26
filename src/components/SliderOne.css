@@ -8,6 +8,12 @@
   min-width: 250px;
 }
 
+.coaching-main-slider .owl-next, 
+.coaching-main-slider .owl-prev	{
+	border-radius: 4px !important;
+	margin-top: -38px !important;
+}
+
 .coaching-main-slider .owl-dots .owl-dot {
   width: 14px;
   height: 14px;
